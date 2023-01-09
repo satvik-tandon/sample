@@ -2,7 +2,7 @@
 
 ## 1. INSTALLATION
 Download the scanner using the following command: 
-`wget https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2.12.0_Linux.tar.gz`
+``` wget https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2.12.0_Linux.tar.gz ```
 Extract the downloaded tar file: 
 ```tar -xvzf ZAP_2.9.0_Linux.tar.gz ```
 Change the directory to the ZAP folder: 
