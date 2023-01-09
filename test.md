@@ -28,7 +28,7 @@ To start the Spider scan (Response: Scan ID):
 ``` 
 curl "http://localhost:8080/JSON/spider/action/scan/?apikey=u39bcefvkn6is3k7jjmb3ebqpf&url=http://192.168.1.13:9392&contextName=&recurse=true"
 ```
-the “recurse” parameter is used to specify whether to recursively scan a target. This means that ZAP will follow any links in the target and scan the linked pages as well. You can specify a maximum depth for the recursion using the “maxChildren” parameter: 
+the "recurse" parameter is used to specify whether to recursively scan a target. This means that ZAP will follow any links in the target and scan the linked pages as well. You can specify a maximum depth for the recursion using the "maxChildren" parameter: 
 ```
 curl "http://localhost:8080/JSON/spider/action/scan/?apikey=u39bcefvkn6is3k7jjmb3ebqpf&url=http://192.168.1.13:9392&contextName=&recurse=true&maxChildren=<NUMBER>"
 ```
@@ -85,11 +85,11 @@ curl "http://localhost:8080/JSON/ascan/action/stop/?apikey=u39bcefvkn6is3k7jjmb3
 ```
 To view the alerts:
 ```
-curl “http://localhost:8080/JSON/alert/view/alerts/?apikey=u39bcefvkn6is3k7jjmb3ebqpf&baseurl=http://192.168.1.13:9392&start=0&count=5000&riskId=” 
+curl "http://localhost:8080/JSON/alert/view/alerts/?apikey=u39bcefvkn6is3k7jjmb3ebqpf&baseurl=http://192.168.1.13:9392&start=0&count=5000&riskId=" 
 ```
 To view alerts by risk category:
 ```
-curl “http://localhost:8080/JSON/alert/view/alertsByRisk/?apikey=u39bcefvkn6is3k7jjmb3ebqpf&url=http://192.168.1.13:9392&recurse=”
+curl "http://localhost:8080/JSON/alert/view/alertsByRisk/?apikey=u39bcefvkn6is3k7jjmb3ebqpf&url=http://192.168.1.13:9392&recurse="
 ```
 To get a list of all scan ids:
 ```
@@ -98,7 +98,7 @@ curl "http://localhost:8080/JSON/ascan/view/scans?apikey=u39bcefvkn6is3k7jjmb3eb
 # Reports
 To get the copy of report in html format:
 ```
-curl “http://localhost:8080/OTHER/core/other/htmlreport/?scanId=<SCAN_ID>&apikey=u39bcefvkn6is3k7jjmb3ebqpf” -o report.html   
+curl "http://localhost:8080/OTHER/core/other/htmlreport/?scanId=<SCAN_ID>&apikey=u39bcefvkn6is3k7jjmb3ebqpf" -o report.html   
 ```
 
 
