@@ -18,7 +18,7 @@ Start zap GUI using this command:
 ```
 ./zap.sh -port 8080
 ```
-OSWASP ZAP GUI will load up. Now go to Tools>Options>API>API Key and copy the key from there and then exit the GUI by using Ctrl+C in the CLI. 
+OSWASP ZAP GUI will load up. Now go to ```Tools>Options>API>API Key``` and copy the key from there and then exit the GUI by using Ctrl+C in the CLI. 
 Start daemon mode with configured key using the following command: 
 ```
 ./zap.sh -daemon -config api.key=<API_KEY> -port 8080 &
