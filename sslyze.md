@@ -2,10 +2,10 @@
 
 ## 1. INSTALLATION
 ```
+sudo apt install software-properties-common -y
+sudo add-apt-repository ppa:deadsnakes/ppa
 apt install python3.10 -y 
-
 apt-get -y install python3-pip 
-
 pip install sslyze==5.0.6 
 ```
 ## 2. SCANNING AND REPORTING
